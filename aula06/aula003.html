@@ -36,27 +36,30 @@
       }
 
       /*
-        DATA TYPES
-        Tipos primitivos PRIMORDIAIS
-        Number ( 1, 2, 3, -4, -5, -6...)
-        '--> valores internos (infinity, NaN)
-
-       Boolean (true, false)
-       String ('Google' "JavaScript" ´Dennys´)
-       Null
-       Undefined
-       Object
-          '--> Array
-      Function */
+      Number.parseInt(n) "converte para numeros inteiros" EX. 1, 2, 3, 5, 6
+      Number.parseFloat(n) "converte para numeros reias" 1.1, 1.2, 1.3, 1.5
+      var s = 'JavaScript'
+      'Eu estou aprendendo s' (não faz interpolação)
+      'Eu estou aprendendo' + s (usa concatenação) 
+      ´Eu uso aprendendo ${s}´ (usa template string)
+       s.lenght (Quantos caracteres a string tem)
+       s.toUperCase() (Tudo para 'MAIÚSCULA')
+       s.toLowerCase() (Tudo apra 'MINÚSCULA')
+      */
     </style>
   </head>
   <body>
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <script>
-      window.alert("Minha primeira mensagem!"); // Faz um ALERTA ao abrir a pag.
-      window.confirm("Está gostando de JS ?"); // Botão com "OK" e "CANCEL"
-      window.prompt("Qual é o seu Nome?"); // Serve para perguntar o nome.
+      var n1 = Number(window.prompt("Digite um número")); //windrow.prompt retrona a soma como "string"
+      var n2 = Number(window.prompt("Digite outro número"));
+      var s = n1 + n2;
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+      window.alert("A soma dos valores é " + s.toString); // ((+) para adição e para concatenação)
+      // (Number + Number) para adição
+      // (String + String) para concatenação
+      // (s.toStringo ou String(s) )
     </script>
   </body>
 </html>
