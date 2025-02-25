@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com DOM</title>
+    <style>
+      body {
+        background-color: black;
+        color: antiquewhite;
+        font: normal 12pt arial;
+      }
+    </style>
+  </head>
+  <body>
+    <!--DOCUMENT OBJECT MODEL
+    Árvoce DOM
+    Window -> location
+       '-> document > HTML -> head -> (meta, title)
+       '-> history      '-> body 
+                             '-> (h1, p, p(strong), div)
+
+
+    getElementsByTagName () "por marca"
+    getElementsByTagid () "por ID"
+    getElementsByName () "por Nome"
+    getElementsByClassName () "por classe"
+    querySelector()" por Seletor"
+    querySelectorAll() " por Seletor"
+
+
+    -->
+
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>de todo meu estudo</p>
+    <p name="curso">no curso do prof.</p>
+    <p class="gguanabara">Gustavo Guanabara no</p>
+    <p id="msg">Curso em video</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> com JavaScript</p>
+    <div>Clique em mim</div>
+    <div id="msg">Clique mais uma vez</div>
+    <script>
+      var corpo = window.document.body; /* variável para o body */
+      corpo.style.background = "gray";
+
+      var p1 = window.document.getElementsByTagName("p")[5];
+      /* variável para o elemento p de acordo com a linha [0, 1, 2, 3...]*/
+      window.document.write(p1.innerHTML);
+      /* innerText -sem formatação/innderHTML com formatação */
+      p1.style.color = "red";
+      window.alert(p1.innerText);
+
+      var d = window.document.getElementById("msg");
+      d.innerText = "Estou aguardando...";
+      /*Troca o paragrafo com a variável de id="msg" para a frase escolhida */
+
+      var d = window.document.getElementsByName("curso")[0];
+      d.innerText = "Olá!";
+
+      var d = window.document.querySelector("div#msg");
+      d.style.background = "blue";
+    </script>
+  </body>
+</html>
