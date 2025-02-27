@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+body > div#bg {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    width: ;
+}
+h1
