@@ -10,12 +10,13 @@
     </style>
   </head>
   <body>
-    <div id="bg">
+    <form id="bg">
         <h1>Selecione seu pais de ORIGEM</h1>
+        <label>Digite aqui o seu País </label>
         <input type="text" name="txtpaís" id="iseupaís" placeholder="Sua nacionalidade"/>
-        <input type="button" value="Enviar" onclick="suanacionalidade()" />
+        <input class="button" type="button" value="Enviar" onclick="suanacionalidade()" />
         <div id="res"></div>
-    </div>
+    </form>
 
     <script>
       function suanacionalidade() {    
