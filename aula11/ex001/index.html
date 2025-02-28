@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo/style.css">
     <title>Ex.País</title>
-    <style>
-        
-    </style>
   </head>
   <body>
     <form id="bg">
         <h1>Selecione seu pais de ORIGEM</h1>
         <label>Digite aqui o seu País </label>
-        <input type="text" name="txtpaís" id="iseupaís" placeholder="Sua nacionalidade"/>
+        <input type="text" name="txtpaís" id="seupaís" placeholder="Digite seu País"/>
         <input class="button" type="button" value="Enviar" onclick="suanacionalidade()" />
         <div id="res"></div>
     </form>
 
     <script>
       function suanacionalidade() {    
-        var input = window.document.querySelector("input#iseupaís");
+        var input = window.document.querySelector("input#seupaís");
         var res = window.document.querySelector("div#res");
         var pais = input.value.trim().toLowerCase(); //  Obtém o valor digitado no input.
         var nacionalidades = {
