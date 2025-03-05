@@ -48,7 +48,7 @@ function verificar() {
       img.setAttribute("src", "imagens/idosoM.png");
     }
   }
-  res.style.fontWeight = "bold"
+  res.style.fontWeight = "bolder"
   res.style.textAlign = "center";
   res.innerHTML = `Detectamos ${genero} com ${idade} anos.<br><br>`;
   res.appendChild(img);
