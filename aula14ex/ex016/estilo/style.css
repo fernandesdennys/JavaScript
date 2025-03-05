@@ -25,6 +25,18 @@ section {
   box-shadow: 5px 5px 10px black;
   border-radius: 20px;
 }
+p {
+  font-weight: bolder;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+}
+input {
+  display: flex;
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(222, 184, 135, 0.418);
+}
 
 footer {
   text-align: center;
